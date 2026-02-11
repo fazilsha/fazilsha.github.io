@@ -2,7 +2,7 @@ import { Github, Linkedin, Facebook, Instagram, MessageCircle, ArrowDown } from 
 import fazilPhoto from "@/assets/fazil-photo.png";
 
 const socials = [
-  { icon: Linkedin, href: "https://linkedin.com/in/fazilsha", label: "LinkedIn" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/fazil-sha-6b56ba15b/", label: "LinkedIn" },
   { icon: Github, href: "https://github.com/fazilsha", label: "GitHub" },
   { icon: MessageCircle, href: "#", label: "Discord" },
   { icon: Facebook, href: "#", label: "Facebook" },

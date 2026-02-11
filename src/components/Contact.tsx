@@ -60,7 +60,7 @@ const Contact = () => {
             <h3 className="font-mono text-sm text-muted-foreground mb-6 uppercase tracking-widest">Connect</h3>
             <div className="space-y-4">
               {[
-                { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/fazilsha" },
+                { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/fazil-sha-6b56ba15b/" },
                 { icon: Github, label: "GitHub", href: "https://github.com/fazilsha" },
                 { icon: MessageCircle, label: "Discord", href: "#" },
                 { icon: Facebook, label: "Facebook", href: "#" },
