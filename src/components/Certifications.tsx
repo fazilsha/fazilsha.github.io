@@ -2,12 +2,14 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Award, GraduationCap } from "lucide-react";
 
 const certs = [
-  { title: "Your Certification Here", org: "Issuing Organization", year: "2024" },
-  { title: "Another Certification", org: "Issuing Organization", year: "2023" },
+  { title: "Certified Ethical Hacker (CEH) – Practical", org: "EC-Council", year: "" },
+  { title: "Certified in Cybersecurity (CC)", org: "ISC2", year: "" },
+  { title: "Azure Security Engineer", org: "Microsoft", year: "" },
+  { title: "SecOps – CAPEN Certification", org: "In Progress", year: "" },
 ];
 
 const education = [
-  { title: "Your Degree / Program", org: "University Name", year: "2020 – 2024" },
+  { title: "Bachelor of Technology (B.Tech) – Information Technology", org: "Panimalar Institute of Technology", year: "2019" },
 ];
 
 const Certifications = () => {
