@@ -1,4 +1,5 @@
 import { Github, Linkedin, Facebook, Instagram, MessageCircle, ArrowDown } from "lucide-react";
+import fazilPhoto from "@/assets/fazil-photo.png";
 
 const socials = [
   { icon: Linkedin, href: "https://linkedin.com/in/fazilsha", label: "LinkedIn" },
@@ -77,15 +78,24 @@ const Hero = () => {
 
         {/* Profile photo */}
         <div className="flex-shrink-0">
-          <div className="relative">
-            <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-2 border-primary/30 animate-pulse-glow">
+          <div className="relative group">
+            {/* Outer rotating ring */}
+            <div className="absolute -inset-3 rounded-full border border-dashed border-primary/20 animate-[spin_20s_linear_infinite] pointer-events-none" />
+            {/* Glow backdrop */}
+            <div className="absolute -inset-6 rounded-full bg-primary/5 blur-2xl group-hover:bg-primary/10 transition-all duration-700 pointer-events-none" />
+            {/* Photo container */}
+            <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-2 border-primary/30 animate-pulse-glow relative z-10 group-hover:border-primary/60 transition-all duration-500 group-hover:scale-105">
               <img
-                src="https://avatars.githubusercontent.com/fazilsha"
+                src={fazilPhoto}
                 alt="Fazil Sha"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700"
               />
             </div>
-            <div className="absolute -inset-4 rounded-full border border-primary/10 animate-float pointer-events-none" />
+            {/* Floating orbital ring */}
+            <div className="absolute -inset-6 rounded-full border border-primary/10 animate-float pointer-events-none" />
+            {/* Corner accents */}
+            <div className="absolute -top-2 -right-2 w-3 h-3 border-t-2 border-r-2 border-primary/40 pointer-events-none" />
+            <div className="absolute -bottom-2 -left-2 w-3 h-3 border-b-2 border-l-2 border-primary/40 pointer-events-none" />
           </div>
         </div>
       </div>
